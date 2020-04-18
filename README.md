@@ -1,6 +1,8 @@
 ecommerce
 =========
 
+SZ: This probably needs to be updated.
+
 **Note: This project is no longer being maintained.**
 
 A PHP e-commerce web application.
