@@ -45,6 +45,7 @@ include 'config.php';
 
           if(isset($_SESSION['username'])){
             echo '<li><a href="account.php">My Account</a></li>';
+            echo '<li><a href="user_display.php">Users info</a></li>';
             echo '<li><a href="logout.php">Log Out</a></li>';
           }
           else{
