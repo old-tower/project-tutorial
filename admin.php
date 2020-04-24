@@ -101,10 +101,6 @@ include 'config.php';
       </div>
     </div>
 
-
-
-
-
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
