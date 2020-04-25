@@ -70,11 +70,14 @@ include 'config.php';
               echo '<p><h3>'.$obj->product_name.'</h3></p>';
               echo '<img src="images/products/'.$obj->product_img_name.'"/>';
               echo '<p><strong>Product Code</strong>: '.$obj->product_code.'</p>';
-              echo '<p><strong>Description</strong>: '.$obj->product_desc.'</p>';
               echo '<p><strong>Units Available</strong>: '.$obj->qty.'</p>';
               echo '<p><strong>Price (Per Unit)</strong>: '.$currency.$obj->price.'</p>';
 
-
+              echo '<form method = "product" action="display_image.php">
+                <input type="radio" name="product" value="product-description/'.$obj->product_name.'.php">
+                <label for="product"> More information about: '.$obj->product_name.'</label><br>
+                <input type="submit" value="View description">
+              </form> ';
 
               if($obj->qty > 0){
                 echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px;" /></a></p>';
